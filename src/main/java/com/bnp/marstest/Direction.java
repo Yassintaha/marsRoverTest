@@ -1,12 +1,11 @@
 package com.bnp.marstest;
 
 public enum Direction {
-    EAST("E")
-    ,WEST("W"),
+    EAST("E"), WEST("W"),
     NORTH("N"),
     SOUTH("S");
 
-    private String direction;
+    private final String direction;
 
     Direction(String direction) {
         this.direction = direction;
@@ -27,7 +26,7 @@ public enum Direction {
         }
     }
 
-    public Direction goLeft(){
+    public Direction goLeft() {
         switch (this.direction) {
             case "E":
                 return NORTH;
@@ -43,7 +42,8 @@ public enum Direction {
 
 
     }
-    public Direction goRight(){
+
+    public Direction goRight() {
         switch (this.direction) {
             case "E":
                 return SOUTH;
@@ -59,6 +59,7 @@ public enum Direction {
 
 
     }
+
     @Override
     public String toString() {
         return direction;

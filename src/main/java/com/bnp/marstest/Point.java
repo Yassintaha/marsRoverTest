@@ -10,6 +10,7 @@ import java.util.Objects;
 public class Point {
     protected int x;
     protected int y;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
